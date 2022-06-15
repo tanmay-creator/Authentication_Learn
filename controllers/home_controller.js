@@ -1,4 +1,8 @@
+const Post = require('../models/post');
 module.exports.home = function(req,res){
    
-    return res.render('home', {title:"home"});
+    Post.find({}).populate('user').exec(function(err,posts){
+        return res.render('home', {title:"Home Page",posts:posts});
+    });
+    
 }

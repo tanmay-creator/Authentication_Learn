@@ -6,3 +6,5 @@ db.on('error', console.error.bind(console, "Error connecting in database"));
 db.once('open', function(){
     console.log("Connected Successfully");
 })
+
+module.exports = db;

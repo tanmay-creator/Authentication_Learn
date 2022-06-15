@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: black;
+}
+
+footer .heading {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .heading .title {
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer .heading .para {
+  font-size: 1rem;
+  font-family: cursive;
+}
